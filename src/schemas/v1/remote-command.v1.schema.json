@@ -1,0 +1,18 @@
+{
+  "$id": "https://connected-car.example/schemas/remote-command.v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RemoteCommandV1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "commandId", "vehicleId", "commandType", "requestedAt"],
+  "properties": {
+    "schemaVersion": { "type": "string", "enum": ["v1"] },
+    "commandId": { "type": "string" },
+    "vehicleId": { "type": "string" },
+    "commandType": { "type": "string" },
+    "requestedAt": { "type": "string" },
+    "parameters": {
+      "type": "object"
+    }
+  }
+}

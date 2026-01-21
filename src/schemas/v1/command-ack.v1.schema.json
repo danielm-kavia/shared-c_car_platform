@@ -1,0 +1,16 @@
+{
+  "$id": "https://connected-car.example/schemas/command-ack.v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CommandAckV1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "commandId", "vehicleId", "status", "timestamp"],
+  "properties": {
+    "schemaVersion": { "type": "string", "enum": ["v1"] },
+    "commandId": { "type": "string" },
+    "vehicleId": { "type": "string" },
+    "status": { "type": "string", "enum": ["accepted", "rejected", "completed", "failed"] },
+    "timestamp": { "type": "string" },
+    "reason": { "type": "string" }
+  }
+}

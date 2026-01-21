@@ -1,0 +1,25 @@
+{
+  "$id": "https://connected-car.example/schemas/state-update.v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "StateUpdateV1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "vehicleId", "timestamp", "state"],
+  "properties": {
+    "schemaVersion": { "type": "string", "enum": ["v1"] },
+    "vehicleId": { "type": "string" },
+    "timestamp": { "type": "string" },
+    "state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [],
+      "properties": {
+        "speedKph": { "type": "number" },
+        "batteryPct": { "type": "number" },
+        "fuelPct": { "type": "number" },
+        "latitude": { "type": "number" },
+        "longitude": { "type": "number" }
+      }
+    }
+  }
+}

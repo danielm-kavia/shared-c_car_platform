@@ -1,0 +1,16 @@
+{
+  "name": "@connected-car/shared",
+  "version": "0.1.0",
+  "description": "Shared models, schemas, auth utilities, and logging for the Connected Car Platform.",
+  "private": true,
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "lint": "node ./scripts/lint.js",
+    "test": "node ./scripts/test.js"
+  }
+}
