@@ -99,3 +99,36 @@
 2026-01-21 20:56:54,322 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 240, Duration: 0ms
 2026-01-21 20:56:54,539 - Knowledge - INFO - Saving knowledge to Redis...
 2026-01-21 20:56:54,796 - Knowledge - INFO - Knowledge saved to Redis successfully
+2026-01-21 22:30:00,826 - Knowledge - INFO - Created shared MongoDB connection pool
+2026-01-21 22:30:01,187 - Knowledge - INFO - Starting Knowledge Graph processing with 20 threads
+2026-01-21 22:30:01,377 - Knowledge - INFO - Initial configuration: chunk_size=65536, max_cache_size=500
+2026-01-21 22:30:01,607 - Knowledge - INFO - Knowledge Graph concurrency configuration: workers=20, max_batch_size=10, max_concurrent_llm_calls=50
+2026-01-21 22:30:02,772 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2026-01-21 22:30:02,973 - Knowledge - WARNING - ❌ load_from_redis method not found - Redis support not attached
+2026-01-21 22:30:03,159 - Knowledge - INFO - load persisted knowledge: begin
+2026-01-21 22:30:03,380 - Knowledge - INFO - Persisted knowledge files in /app/data/T0015/309902/b974847/shared-c_car_platform/.knowledge have been renamed to use .json
+2026-01-21 22:30:03,552 - Knowledge - INFO - Found code-base-name: https://github.com/danielm-kavia/shared-c_car_platform.git:kavia-main
+2026-01-21 22:30:03,706 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7a65bac050>
+2026-01-21 22:30:04,019 - Knowledge - INFO - Found code-base-name: https://github.com/danielm-kavia/shared-c_car_platform.git:kavia-main
+2026-01-21 22:30:04,191 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7a65bac050>
+2026-01-21 22:30:04,348 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/309902/b974847/shared-c_car_platform/README.md
+2026-01-21 22:30:04,614 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 101ms
+2026-01-21 22:30:05,759 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: README.md, Duration: 947ms
+2026-01-21 22:30:05,922 - Knowledge - INFO - persist search terms embedding for README.md
+2026-01-21 22:30:06,082 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/309902/b974847/shared-c_car_platform/README.md
+2026-01-21 22:30:06,280 - Knowledge - INFO - Loaded 1 files from persisted knowledge
+2026-01-21 22:30:06,454 - Knowledge - INFO - load persisted knowledge: end
+2026-01-21 22:30:06,614 - Knowledge - INFO - Redis support added with prefix knowledge:b974847:
+2026-01-21 22:30:06,833 - Knowledge - INFO - Starting knowledge initialization for ID: ewVCti-b974847
+2026-01-21 22:30:07,073 - Knowledge - INFO - 🔍 Checking Redis for build_id: b974847
+2026-01-21 22:30:07,226 - Knowledge - INFO - 🔍 Full session ID: ewVCti-b974847
+2026-01-21 22:30:07,428 - Knowledge - INFO - 🔍 Redis prefix will be: knowledge:b974847:
+2026-01-21 22:30:07,599 - Knowledge - INFO - 🔍 Using attached load_from_redis() method
+2026-01-21 22:30:07,780 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2026-01-21 22:30:07,976 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b974847
+2026-01-21 22:30:08,147 - Knowledge - INFO - ✅ Redis cache found! Loading knowledge...
+2026-01-21 22:30:08,309 - Knowledge - INFO - ✅ Successfully loaded from Redis: 1 files
+2026-01-21 22:30:08,506 - Knowledge - INFO - ✅ Redis load complete: 1 files in 0.91s
+2026-01-21 22:30:08,666 - Knowledge - INFO - ⚡ Total Redis path: 0.91s (vs ~300s from disk)
+2026-01-21 22:30:08,837 - Knowledge - INFO - Saving knowledge to Redis...
+2026-01-21 22:30:08,994 - Knowledge - INFO - Knowledge saved to Redis successfully
