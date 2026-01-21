@@ -69,6 +69,33 @@ export function createJwtValidator(): JwtValidator;
 // PUBLIC_INTERFACE
 export function extractBearerToken(authorizationHeader: string | undefined): string | undefined;
 
+export interface SecurityHeadersOptions {
+  serviceName: string;
+  enabled?: boolean;
+  enableCsp?: boolean;
+  csp?: string;
+  enableHsts?: boolean;
+  hstsMaxAgeSeconds?: number;
+  hstsIncludeSubDomains?: boolean;
+  hstsPreload?: boolean;
+  allowCrossOriginResourcePolicy?: "same-origin" | "same-site" | "cross-origin";
+}
+
+// PUBLIC_INTERFACE
+export function createSecurityHeadersMiddleware(
+  options: SecurityHeadersOptions
+): (req: any, res: any, next: any) => void;
+
+export interface RateLimitOptions {
+  enabled?: boolean;
+  windowSeconds?: number;
+  maxRequests?: number;
+  logger?: any;
+}
+
+// PUBLIC_INTERFACE
+export function createRateLimitMiddleware(options: RateLimitOptions): (req: any, res: any, next: any) => void;
+
 export const models: {
   TelemetryV1: any;
   StateUpdateV1: any;
