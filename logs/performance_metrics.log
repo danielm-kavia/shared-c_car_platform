@@ -132,3 +132,30 @@
 2026-01-21 22:30:08,666 - Knowledge - INFO - ⚡ Total Redis path: 0.91s (vs ~300s from disk)
 2026-01-21 22:30:08,837 - Knowledge - INFO - Saving knowledge to Redis...
 2026-01-21 22:30:08,994 - Knowledge - INFO - Knowledge saved to Redis successfully
+2026-01-26 17:44:32,868 - Knowledge - INFO - Created shared MongoDB connection pool
+2026-01-26 17:44:33,238 - Knowledge - INFO - Starting Knowledge Graph processing with 20 threads
+2026-01-26 17:44:33,446 - Knowledge - INFO - Initial configuration: chunk_size=65536, max_cache_size=500
+2026-01-26 17:44:33,644 - Knowledge - INFO - Knowledge Graph concurrency configuration: workers=20, max_batch_size=10, max_concurrent_llm_calls=50
+2026-01-26 17:44:34,759 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2026-01-26 17:44:34,919 - Knowledge - WARNING - ❌ load_from_redis method not found - Redis support not attached
+2026-01-26 17:44:35,112 - Knowledge - INFO - load persisted knowledge: begin
+2026-01-26 17:44:35,324 - Knowledge - INFO - Persisted knowledge files in /app/data/T0015/309902/b974847/shared-c_car_platform/.knowledge have been renamed to use .json
+2026-01-26 17:44:35,506 - Knowledge - INFO - Found code-base-name: https://github.com/danielm-kavia/shared-c_car_platform.git:kavia-main
+2026-01-26 17:44:35,675 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f3e04175490>
+2026-01-26 17:44:35,852 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/309902/b974847/shared-c_car_platform/README.md
+2026-01-26 17:44:36,053 - Knowledge - INFO - Loaded 1 files from persisted knowledge
+2026-01-26 17:44:36,236 - Knowledge - INFO - load persisted knowledge: end
+2026-01-26 17:44:36,411 - Knowledge - INFO - Redis support added with prefix knowledge:b974847:
+2026-01-26 17:44:36,631 - Knowledge - INFO - Starting knowledge initialization for ID: AXm3cv-b974847
+2026-01-26 17:44:36,795 - Knowledge - INFO - 🔍 Checking Redis for build_id: b974847
+2026-01-26 17:44:36,964 - Knowledge - INFO - 🔍 Full session ID: AXm3cv-b974847
+2026-01-26 17:44:37,159 - Knowledge - INFO - 🔍 Redis prefix will be: knowledge:b974847:
+2026-01-26 17:44:37,339 - Knowledge - INFO - 🔍 Using attached load_from_redis() method
+2026-01-26 17:44:37,513 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2026-01-26 17:44:37,688 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b974847
+2026-01-26 17:44:37,912 - Knowledge - INFO - ✅ Redis cache found! Loading knowledge...
+2026-01-26 17:44:38,102 - Knowledge - INFO - ✅ Successfully loaded from Redis: 1 files
+2026-01-26 17:44:38,272 - Knowledge - INFO - ✅ Redis load complete: 1 files in 0.93s
+2026-01-26 17:44:38,456 - Knowledge - INFO - ⚡ Total Redis path: 0.93s (vs ~300s from disk)
+2026-01-26 17:44:38,638 - Knowledge - INFO - Saving knowledge to Redis...
+2026-01-26 17:44:38,816 - Knowledge - INFO - Knowledge saved to Redis successfully
